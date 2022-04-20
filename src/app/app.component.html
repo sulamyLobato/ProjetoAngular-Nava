@@ -1,0 +1,39 @@
+app.component.html                                                                                                                                         <h1>Componente Root</h1>
+
+<app-listar [empresaFilho]="empresa">
+
+</app-listar>
+
+<p>Interpolação: {{ title }}</p>
+
+<!--<p style="{{corFundo}}">
+  Empresa: {{ empresa }}
+</p>-->
+
+<p [style]="corFundo">
+  Empresa: {{ empresa }}
+</p>
+
+<p>
+  <button (click)="clicar()">Clique aqui</button>
+</p>
+
+<p>
+  <input type="text" [value]="empresa">
+</p>
+
+<p>
+  <input type="text" [value]="empresa">
+</p>
+
+<p>
+  <input type="text" [value]="empresa" (keyup)="getTextoDigitado(empresaInput)"
+  #empresaInput >
+</p>
+
+<p>
+  <input type="text" [(ngModel)]="empresa">
+</p>
+
+<!--interpolação para texto comum..
+se tiver propriedade usar o interpolação-->

@@ -1,0 +1,16 @@
+Listar.component.html                                                                                 <p>listar works!</p>
+<p>Empresa filho: {{ empresaFilho }}</p>
+
+<table border="1" style="width: 60%; text-align: center; background-color: aquamarine;">
+  <tr>
+      <th> ID </th>
+      <th> Nome </th>
+      <th> Email </th>
+  </tr>
+  <tr *ngFor="let p of professores">
+      <td> {{ p.id }} </td>
+      <td> {{ p.nome }} </td>
+      <td> {{ p.email }} </td>
+  </tr>
+
+</table>
